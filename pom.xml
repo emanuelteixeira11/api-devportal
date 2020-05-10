@@ -19,6 +19,7 @@
 
     <modules>
         <module>api-devportal-interfaces</module>
+        <module>devportal-maven-plugin</module>
         <module>api-devportal-manager</module>
     </modules>
 

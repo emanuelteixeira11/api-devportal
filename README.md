@@ -20,11 +20,15 @@ From root folder execute following commands:
 ## Access ArangoDb instance
 **Solution instance:**
 ```
-http://localhost:7376/
+location: http://localhost:7376/
+user: root
+password: root
 ``` 
 **ArangoDb instance (debug purpose):**
 ```
-http://localhost:8529/
+location http://localhost:8529/
+user: root
+password: root
 ``` 
 ## Access devportal-manager instance
 **Solution instance:**
