@@ -1,0 +1,10 @@
+server:
+  port: 8929
+spring:
+  data:
+    arangodb:
+      host: 127.0.0.1
+      port: 8629
+      database: api-manager
+      user: root
+      password: rootpassword

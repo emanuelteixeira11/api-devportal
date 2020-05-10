@@ -1,0 +1,27 @@
+version: '3.7'
+services:
+  arangodb_db_container:
+    image: arangodb:latest
+    container_name: arangodb
+    environment:
+      ARANGO_ROOT_PASSWORD: root
+    ports:
+      - "7376:8529"
+    volumes:
+      - arangodb_data_container:/var/lib/arangodb3
+      - arangodb_apps_data_container:/var/lib/arangodb3-apps
+  api-manager:
+    image: api-manager:latest
+    container_name: api-manager
+    depends_on:
+      - arangodb_db_container
+    ports:
+      - "8927:8080"
+    environment:
+      spring.data.arangodb.host: host.docker.internal #hack para o mac os
+      spring.data.arangodb.user: root
+      spring.data.arangodb.password: root
+      spring.data.arangodb.port: 7376
+volumes:
+  arangodb_data_container:
+  arangodb_apps_data_container:
