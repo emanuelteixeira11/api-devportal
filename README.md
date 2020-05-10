@@ -1,4 +1,4 @@
-#API developer portal
+# API developer portal
 
 **Run ArangoDb and devportal modules**
 
@@ -17,7 +17,7 @@ From root folder execute following commands:
 ./scripts/start-arango.sh
 ```
 
-##Access ArangoDb instance
+## Access ArangoDb instance
 **Solution instance:**
 ```
 http://localhost:7376/
@@ -26,7 +26,7 @@ http://localhost:7376/
 ```
 http://localhost:8529/
 ``` 
-##Access devportal-manager instance
+## Access devportal-manager instance
 **Solution instance:**
 ```
 http://localhost:8927/
@@ -35,11 +35,11 @@ http://localhost:8927/
 ```
 http://localhost:8080/
 ``` 
-###Test devportal-manager
+### Test devportal-manager
 ```
 curl http://localhost:8080/api/v1/metadata/
 ``` 
-###SwaggerUI devportal-manager
+### SwaggerUI devportal-manager
 ```
 tbd
 ``` 
